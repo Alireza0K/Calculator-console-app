@@ -11,25 +11,30 @@ in below i wrote a Guide note for for you, i describe this for you.
     
     1. first option is for Addition, Enter symbols '+' in symbols input.
 """)
+while True:
+    
+    AllAndnumbers = list(input().split())
 
-AllAndnumbers = list(input().split())
+    mathSymbols = AllAndnumbers.append(str(input()))
 
-mathSymbols = AllAndnumbers.append(str(input()))
+    math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
+    
+    if AllAndnumbers[2] not in math.validSymbols:
+        
+        AllAndnumbers[2] = input("enter another symbol: ")
 
-math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
-
-if AllAndnumbers[2] == "+":
-    
-    print(math.Addition())
-    
-elif AllAndnumbers[2] == "-":
-    
-    print(math.Minus())
-    
-elif AllAndnumbers[2] == "*":
-    
-    print(math.Multipliction())
-    
-elif AllAndnumbers[2] == "/":
-    
-    print(math.Division())
+    if AllAndnumbers[2] == "+":
+        
+        print(math.Addition())
+        
+    elif AllAndnumbers[2] == "-":
+        
+        print(math.Minus())
+        
+    elif AllAndnumbers[2] == "*":
+        
+        print(math.Multipliction())
+        
+    elif AllAndnumbers[2] == "/":
+        
+        print(math.Division())
