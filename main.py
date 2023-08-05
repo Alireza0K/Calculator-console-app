@@ -12,3 +12,10 @@ in below i wrote a Guide note for for you, i describe this for you.
     1. first option is for Addition, Enter symbols '+' in symbols input.
 """)
 
+AllAndnumbers = list(input().split())
+
+mathSymbols = AllAndnumbers.append(str(input()))
+
+math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
+
+print(math.Addition())
