@@ -16,7 +16,7 @@ under = "<==========*|*==========>"
 
 while True:
     
-    AllAndnumbers = list(input().split())
+    AllAndnumbers = list(input("Enter the numbers with a gap between: ").split())
 
     mathSymbols = AllAndnumbers.append(str(input()))
 
