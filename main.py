@@ -18,4 +18,4 @@ mathSymbols = AllAndnumbers.append(str(input()))
 
 math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
 
-print(math.Addition())
+print(math.AllInfo())

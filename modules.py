@@ -16,7 +16,9 @@ class Math:
     
     def Addition(self):
         
-        return self.AllInfo()
+        # convert str to int
+        
+        return 
     
     def Minus(self):
         
@@ -32,4 +34,14 @@ class Math:
     
     def AllInfo(self):
         
+        self.ConvertToInt()
+        
         return [self.Fnumber, self.Snumber, self.Symbols]
+    
+    def ConvertToInt(self):
+        
+        self.Fnumber = int(self.Fnumber)
+        
+        self.Snumber = int(self.Snumber)
+        
+        return 
