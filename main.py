@@ -18,4 +18,18 @@ mathSymbols = AllAndnumbers.append(str(input()))
 
 math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
 
-print(math.Addition())
+if AllAndnumbers[2] == "+":
+    
+    print(math.Addition())
+    
+elif AllAndnumbers[2] == "-":
+    
+    print(math.Minus())
+    
+elif AllAndnumbers[2] == "*":
+    
+    print(math.Multipliction())
+    
+elif AllAndnumbers[2] == "/":
+    
+    print(math.Division())
