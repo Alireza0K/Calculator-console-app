@@ -28,26 +28,43 @@ class Math:
             
             return "numbers or math symbols is not valid :("
             
-        
         return self.Fnumber + self.Snumber
     
     def Minus(self):
         
         self.ConvertToInt()
         
-        return
+        self.Validation()
+        
+        if self.valid != True:
+            
+            return "numbers or math symbols is not valid :("
+            
+        return self.Fnumber - self.Snumber
 
     def Multipliction(self):
         
         self.ConvertToInt()
         
-        return
-
+        self.Validation()
+        
+        if self.valid != True:
+            
+            return "numbers or math symbols is not valid :("
+            
+        return self.Fnumber * self.Snumber
+        
     def Division(self):
         
         self.ConvertToInt()
         
-        return
+        self.Validation()
+        
+        if self.valid != True:
+            
+            return "numbers or math symbols is not valid :("
+            
+        return self.Fnumber / self.Snumber
     
     def AllInfo(self):
         
