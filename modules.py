@@ -8,11 +8,15 @@ class Math:
     
     def __init__(self, Symbols, Fnumber, Snumber):
         
-        return
+        self.Symbols = Symbols
+        
+        self.Fnumber = Fnumber
+        
+        self.Snumber = Snumber
     
     def Addition(self):
         
-        return
+        return self.AllInfo()
     
     def Minus(self):
         
@@ -25,3 +29,7 @@ class Math:
     def Division(self):
         
         return
+    
+    def AllInfo(self):
+        
+        return [self.Fnumber, self.Snumber, self.Symbols]
