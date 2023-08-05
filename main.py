@@ -11,6 +11,9 @@ in below i wrote a Guide note for for you, i describe this for you.
     
     1. first option is for Addition, Enter symbols '+' in symbols input.
 """)
+
+under = "<==========*|*==========>"
+
 while True:
     
     AllAndnumbers = list(input().split())
@@ -19,22 +22,32 @@ while True:
 
     math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
     
-    if AllAndnumbers[2] not in math.validSymbols:
+    while AllAndnumbers[2] not in math.validSymbols:
         
         AllAndnumbers[2] = input("enter another symbol: ")
+        
+    math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
 
     if AllAndnumbers[2] == "+":
         
         print(math.Addition())
         
+        print(under)
+        
     elif AllAndnumbers[2] == "-":
         
         print(math.Minus())
+    
+        print(under)
         
     elif AllAndnumbers[2] == "*":
         
         print(math.Multipliction())
         
+        print(under)
+        
     elif AllAndnumbers[2] == "/":
         
         print(math.Division())
+        
+        print(under)
