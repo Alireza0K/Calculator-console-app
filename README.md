@@ -1,4 +1,4 @@
-<h1 style="text-align:center">Console App Calculator</h1>
+<h1 style="text-align: center;">Console App Calculator</h1>
 
 ## Little talk to you
 Hi there 👋, this is a **Console App Calculator**, this mini project made with **python**, i know this is a useless app but i made it for my self to learn **OOP** in python.
