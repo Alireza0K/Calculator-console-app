@@ -21,7 +21,7 @@ while True:
     
     AllAndnumbers = list(input("Enter the numbers with a gap between: ").split())
 
-    mathSymbols = AllAndnumbers.append(str(input()))
+    mathSymbols = AllAndnumbers.append(str(input("Enter the math symbol you want:")))
 
     math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
     
