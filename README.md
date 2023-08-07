@@ -16,7 +16,7 @@ python3 main.py
 and you can see manual, go with it.
 > Let's see the project 
 
-[![Alt text](hhttps://yourimageshare.com/ib/WXcFRVXbNp)](https://github.com/Alireza0K)
+[![Alt text](https://i.yourimageshare.com/WXcFRVXbNp.webp)
 
 
 ---
