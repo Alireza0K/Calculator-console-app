@@ -22,7 +22,13 @@ while True:
     AllAndnumbers = list(input("Enter the numbers with a gap between: ").split())
 
     mathSymbols = AllAndnumbers.append(str(input("Enter the math symbol you want:")))
+    
+    if len(AllAndnumbers) != 3: # validation, it's forced user to enter whole inputs.
 
+        print("you didn't enter some of inputs try again")
+        
+        continue
+        
     math = Math(AllAndnumbers[2], AllAndnumbers[0], AllAndnumbers[1])
     
     while AllAndnumbers[2] not in math.validSymbols:
