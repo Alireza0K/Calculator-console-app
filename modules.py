@@ -74,13 +74,19 @@ class Math:
     
     def ConvertToInt(self):
         
-        if self.NumbersValidation() == False:
+        while self.NumbersValidation() != True:
             
             print("numbers isn't true, enter AGAIN!!!")
             
-            self.Fnumber = int(input("Enter the first number:"))
+            self.Fnumber = input("Enter the first number:")
         
-            self.Snumber = int(input("Enter the second number:"))
+            self.Snumber = input("Enter the second number:")
+            
+            self.NumbersValidation()
+            
+        self.Fnumber = int(self.Fnumber)
+        
+        self.Snumber = int(self.Snumber)
         
         return 
     
@@ -104,7 +110,7 @@ class Math:
         
         validation = True
         
-        if type(self.Snumber) != int or type(self.Fnumber) != int:
+        if str(self.Snumber).isdigit() != True or str(self.Fnumber).isdigit() != True:
             
             validation = False
             
